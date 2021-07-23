@@ -1,0 +1,9 @@
+    model = tf.keras.Sequential()
+    model.add(Dense(10, input_dim=end_train, activation='tanh'))
+    model.add(Dropout(0.3))
+    model.add(Dense(10, activation='tanh'))
+
+    model.add(Dense(1))
+    model.compile(loss='mean_squared_error', optimizer='adam')
+均方差正的才好！
+    shanchu=['V5','V9','V11','V14','V17','V19','V21','V22','V23','V27','V35']
